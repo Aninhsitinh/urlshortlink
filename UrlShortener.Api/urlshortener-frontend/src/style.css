@@ -1,0 +1,29 @@
+﻿:root {
+    --bg-gradient: linear-gradient(135deg, #e8efff, #f7e9ff);
+    --text-color: #1c1c1e;
+    --card-bg: rgba(255, 255, 255, 0.22);
+    --card-border: rgba(255, 255, 255, 0.45);
+    --input-bg: rgba(255, 255, 255, 0.35);
+    --input-border: rgba(255, 255, 255, 0.55);
+    --button-bg: #007aff;
+    --button-hover: #0063cc;
+}
+
+/* 🌙 Dark Mode */
+.dark-theme {
+    --bg-gradient: linear-gradient(135deg, #1b1b1d, #2a2a2e);
+    --text-color: #f2f2f7;
+    --card-bg: rgba(34, 34, 34, 0.4);
+    --card-border: rgba(255, 255, 255, 0.12);
+    --input-bg: rgba(255, 255, 255, 0.08);
+    --input-border: rgba(255, 255, 255, 0.25);
+    --button-bg: #0a84ff;
+    --button-hover: #006de2;
+}
+
+/* Background cho toàn trang */
+body {
+    background: var(--bg-gradient);
+    font-family: 'SF Pro Display', 'Inter', sans-serif;
+    transition: background .4s ease, color .4s ease;
+}
