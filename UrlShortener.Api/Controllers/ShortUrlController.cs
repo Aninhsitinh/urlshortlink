@@ -32,7 +32,7 @@ namespace UrlShortener.Api.Controllers
 
             var result = await _shortUrlService.CreateAsync(request.OriginalUrl, userId);
 
-            // ✅ Base URL chính xác (tránh lỗi https://localhost:7176/api/api/)
+            
             var baseUrl = $"{Request.Scheme}://{Request.Host}";
 
             return Ok(new
