@@ -16,7 +16,7 @@ namespace UrlShortener.Api.Controllers
             _authService = authService;
         }
 
-        // ✅ POST: api/auth/register
+        // POST: api/auth/register
         [HttpPost("register")]
         public async Task<IActionResult> Register([FromBody] RegisterRequest request)
         {
@@ -31,7 +31,7 @@ namespace UrlShortener.Api.Controllers
             return Ok(result);
         }
 
-        // ✅ POST: api/auth/login
+        //  POST: api/auth/login
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] LoginRequest request)
         {
@@ -46,7 +46,7 @@ namespace UrlShortener.Api.Controllers
             return Ok(result);
         }
 
-        // ✅ POST: api/auth/refresh
+        //  POST: api/auth/refresh
         [HttpPost("refresh")]
         public async Task<IActionResult> Refresh([FromBody] RefreshRequest request)
         {
@@ -58,7 +58,7 @@ namespace UrlShortener.Api.Controllers
             return Ok(result);
         }
 
-        // ✅ POST: api/auth/logout
+        //  POST: api/auth/logout
         [Authorize]
         [HttpPost("logout")]
         public async Task<IActionResult> Logout()
